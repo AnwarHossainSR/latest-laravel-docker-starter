@@ -11,7 +11,7 @@ git clone https://github.com/especializati/setup-docker-laravel.git
 Clone the Laravel Files
 
 ```sh
-composer create-project laravel/laravel your-project-name
+git clone https://github.com/laravel/laravel.git your-project-name
 ```
 
 Copy the docker-compose.yml, Dockerfile and docker/ directory to your project
@@ -26,6 +26,10 @@ rm -rf laravel-docker-starter
 
 ```sh
 cd your-project-name/
+```
+
+```sh
+rm -rf .git
 ```
 
 Create the .env File
