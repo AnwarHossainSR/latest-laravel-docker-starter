@@ -104,13 +104,13 @@ VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 Upload the project containers
 
 ```sh
-docker-compose up -d
+sudo docker-compose up -d
 ```
 
 Access the container
 
 ```sh
-docker-compose exec app bash
+sudo docker-compose exec app bash
 ```
 
 Install project dependencies
