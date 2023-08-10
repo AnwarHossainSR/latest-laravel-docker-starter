@@ -136,7 +136,7 @@ Access the project
 
 # if you face any problem related to phpmyadmin access, please follow bellow command
 
-# php myadmin acess issue
+# php myadmin access issue
 
 ```sh
 sudo docker-compose exec db mysql -u root -p
@@ -160,6 +160,12 @@ FLUSH PRIVILEGES;
 # If getting error regarding network / ip related issue
 
 Allow Connections from All IPs:
+
+```sh
+sudo docker-compose exec db mysql -u root -p
+```
+Then hit Enter when ask for password
+
 ```sh
 GRANT ALL PRIVILEGES ON database_name.* TO 'user1'@'%' IDENTIFIED BY 'password';
 ```
