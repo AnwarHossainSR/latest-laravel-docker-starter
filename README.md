@@ -141,18 +141,23 @@ Access the project
 ```sh
 sudo docker-compose exec db mysql -u root -p
 ```
+
 Then hit Enter when ask for password
 
 Create new user
+
 ```sh
 CREATE USER 'newuser'@'%' IDENTIFIED BY 'newpassword';
 ```
 
 Give permission
+
 ```sh
 GRANT ALL PRIVILEGES ON *.* TO 'newuser'@'%';
 ```
+
 Flush Priviledge
+
 ```sh
 FLUSH PRIVILEGES;
 ```
@@ -164,15 +169,17 @@ Allow Connections from All IPs:
 ```sh
 sudo docker-compose exec db mysql -u root -p
 ```
+
 Then hit Enter when ask for password
 
 ```sh
 GRANT ALL PRIVILEGES ON database_name.* TO 'user1'@'%' IDENTIFIED BY 'password';
 ```
+
 OR
 
 Specify Docker Container IP Range:
+
 ```sh
 GRANT ALL PRIVILEGES ON database_name.* TO 'user1'@'172.17.%' IDENTIFIED BY 'password';
 ```
-
