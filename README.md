@@ -17,7 +17,7 @@ git clone https://github.com/laravel/laravel.git your-project-name
 Copy the docker-compose.yml, Dockerfile and docker/ directory to your project
 
 ```sh
-cp -rf setup-docker-laravel/* your-project-name/
+cp -rf laravel-docker-starter/* your-project-name/
 ```
 
 ```sh
@@ -134,9 +134,9 @@ php artisan migrate:fresh --seed
 Access the project
 [http://localhost:8989](http://localhost:8989)
 
-#if you face any problem related to phpmyadmin access, please follow bellow command
+# if you face any problem related to phpmyadmin access, please follow bellow command
 
-#php myadmin acess issue
+# php myadmin acess issue
 
 ```sh
 sudo docker-compose exec db mysql -u root -p
@@ -157,7 +157,7 @@ Flush Priviledge
 FLUSH PRIVILEGES;
 ```
 
-#If getting error regarding network / ip related issue
+# If getting error regarding network / ip related issue
 
 Allow Connections from All IPs:
 ```sh
