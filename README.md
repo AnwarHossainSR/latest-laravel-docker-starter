@@ -125,5 +125,11 @@ Generate Laravel project key
 php artisan key:generate
 ```
 
+DB migrate and seed
+
+```sh
+php artisan migrate:fresh --seed
+```
+
 Access the project
 [http://localhost:8989](http://localhost:8989)
