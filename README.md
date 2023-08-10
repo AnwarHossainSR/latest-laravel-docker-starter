@@ -134,14 +134,14 @@ php artisan migrate:fresh --seed
 Access the project
 [http://localhost:8989](http://localhost:8989)
 
-if you face any problem related to phpmyadmin access, please follow bellow command
+#if you face any problem related to phpmyadmin access, please follow bellow command
 
-php myadmin acess issue
+#php myadmin acess issue
 
 ```sh
-docker-compose exec db mysql -u root -p
+sudo docker-compose exec db mysql -u root -p
 ```
-Then hit Entr when ask for password
+Then hit Enter when ask for password
 
 Create new user
 ```sh
@@ -157,7 +157,7 @@ Flush Priviledge
 FLUSH PRIVILEGES;
 ```
 
-If getting error regarding network / ip related issue
+#If getting error regarding network / ip related issue
 
 Allow Connections from All IPs:
 ```sh
