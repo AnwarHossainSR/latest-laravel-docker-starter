@@ -133,3 +133,40 @@ php artisan migrate:fresh --seed
 
 Access the project
 [http://localhost:8989](http://localhost:8989)
+
+if you face any problem related to phpmyadmin access, please follow bellow command
+
+php myadmin acess issue
+
+```sh
+docker-compose exec db mysql -u root -p
+```
+Then hit Entr when ask for password
+
+Create new user
+```sh
+CREATE USER 'newuser'@'%' IDENTIFIED BY 'newpassword';
+```
+
+Give permission
+```sh
+GRANT ALL PRIVILEGES ON *.* TO 'newuser'@'%';
+```
+Flush Priviledge
+```sh
+FLUSH PRIVILEGES;
+```
+
+If getting error regarding network / ip related issue
+
+Allow Connections from All IPs:
+```sh
+GRANT ALL PRIVILEGES ON database_name.* TO 'user1'@'%' IDENTIFIED BY 'password';
+```
+OR
+
+Specify Docker Container IP Range:
+```sh
+GRANT ALL PRIVILEGES ON database_name.* TO 'user1'@'172.17.%' IDENTIFIED BY 'password';
+```
+
