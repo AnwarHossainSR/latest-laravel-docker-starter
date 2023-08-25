@@ -145,12 +145,12 @@ Then hit Enter when ask for password
 
 Create new user
 ```sh
-CREATE USER 'newuser'@'%' IDENTIFIED BY 'newpassword';
+CREATE USER 'admin'@'%' IDENTIFIED BY 'admin';
 ```
 
 Give permission
 ```sh
-GRANT ALL PRIVILEGES ON *.* TO 'newuser'@'%';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';
 ```
 Flush Priviledge
 ```sh
@@ -167,7 +167,7 @@ sudo docker-compose exec db mysql -u root -p
 Then hit Enter when ask for password
 
 ```sh
-GRANT ALL PRIVILEGES ON database_name.* TO 'user1'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON database_name.* TO 'admin'@'%' IDENTIFIED BY 'admin';
 ```
 OR
 
