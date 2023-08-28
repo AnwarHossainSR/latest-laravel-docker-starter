@@ -21,7 +21,7 @@ cp -rf setup-docker-laravel/* your-project-name/
 ```
 
 ```sh
-rm -rf laravel-docker-starter
+rm -rf setup-docker-laravel
 ```
 
 ```sh
