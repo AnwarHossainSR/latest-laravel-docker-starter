@@ -29,7 +29,7 @@ cd your-project-name/
 ```
 
 ```sh
-rm -rf .git
+rm -rf .git .github
 ```
 
 Create the .env File
