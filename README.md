@@ -17,7 +17,7 @@ git clone https://github.com/laravel/laravel.git your-project-name
 Copy the docker-compose.yml, Dockerfile and docker/ directory to your project
 
 ```sh
-cp -rf laravel-docker-starter/* your-project-name/
+cp -rf setup-docker-laravel/* your-project-name/
 ```
 
 ```sh
