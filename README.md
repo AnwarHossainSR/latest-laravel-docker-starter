@@ -1,4 +1,4 @@
-# Setup Docker Laravel (8,9,10)
+# Setup Docker Laravel (10,11)
 
 ### Step by step
 
