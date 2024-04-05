@@ -5,7 +5,7 @@
 Clone Repository
 
 ```sh
-git clone https://github.com/especializati/setup-docker-laravel.git
+git clone https://github.com/especializati/latest-laravel-docker-starter.git
 ```
 
 Clone the Laravel Files
@@ -17,11 +17,11 @@ git clone https://github.com/laravel/laravel.git your-project-name
 Copy the docker-compose.yml, Dockerfile and docker/ directory to your project
 
 ```sh
-cp -rf laravel-docker-starter/* your-project-name/
+cp -rf latest-laravel-docker-starter/* your-project-name/
 ```
 
 ```sh
-rm -rf laravel-docker-starter
+rm -rf latest-laravel-docker-starter
 ```
 
 ```sh
@@ -41,7 +41,7 @@ cp .env.example .env
 Update .env file environment variables with this one
 
 ```dosini
-APP_NAME="Payroll Management System"
+APP_NAME="Your Project Name"
 APP_URL=http://localhost:8989
 APP_ENV=local
 APP_KEY=
